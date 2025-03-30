@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Statistics Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Statistics Calculator</h1>
+            <p class="subtitle">Analyze your numerical data with ease</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <form id="statsForm">
+                    <label for="numbers">Enter comma-separated numbers:</label>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="numbers"
+                            name="numbers"
+                            placeholder="e.g., 1, 2, 3, 4, 5"
+                            required
+                        />
+                        <button type="submit">Calculate</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="results-section">
+                <div class="stat-card">
+                    <h3>Mean</h3>
+                    <p class="stat-value" id="mean">-</p>
+                    <p class="stat-description">Average of all numbers</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Median</h3>
+                    <p class="stat-value" id="median">-</p>
+                    <p class="stat-description">Middle value when sorted</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Mode</h3>
+                    <p class="stat-value" id="mode">-</p>
+                    <p class="stat-description">Most frequent number</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Range</h3>
+                    <p class="stat-value" id="range">-</p>
+                    <p class="stat-description">Difference between max and min</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Variance</h3>
+                    <p class="stat-value" id="variance">-</p>
+                    <p class="stat-description">Average squared deviation</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Standard Deviation</h3>
+                    <p class="stat-value" id="standardDeviation">-</p>
+                    <p class="stat-description">Square root of variance</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Statistics Calculator Pro. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
